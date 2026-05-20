@@ -6,7 +6,7 @@ df3 = pd.read_csv("data/daily_sales_data_2.csv")
 
 df = pd.concat([df1, df2, df3])
 
-df = df[df["product"] == "Pink Morsel"]
+df = df[df["product"] == "pink morsel"]
 
 df["price"] = df["price"].replace("[$]", "", regex=True)
 
